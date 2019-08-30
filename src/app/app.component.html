@@ -1,14 +1,28 @@
-
-    <!-- Start your project here-->
+<!-- Start your project here-->
 <div style="height: 100vh">
-  <div class="flex-center flex-column">
-    <h1 class="animated fadeIn mb-4">Material Design for Bootstrap (Angular)</h1>
-
-    <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-    <h6 class="animated fadeIn mb-3">Start browsing <a href="https://mdbootstrap.com/angular">documentation</a>.</h6>
-
-    <p class="animated fadeIn text-muted">MDB Team</p>
-  </div>
+  <mdb-card
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient1.jpg')"
+  >
+    <div class="text-white text-center py-5 px-4 my-5">
+      <div>
+        <h1 class="card-title h1-responsive pt-3 mb-5 font-bold">
+          <strong>dbforMovies</strong>
+        </h1>
+        <p class="mx-5 mb-5">
+          dbforMovies as the name suggests is a movie database. It has a minimal
+          interface created in Angular using themoviedb API.
+        </p>
+        <a
+          mdbBtn
+          color="white"
+          outline="true"
+          class="waves-light"
+          mdbWavesEffect
+        >
+          <mdb-icon fas icon="clone" class="left"></mdb-icon>Learn More
+        </a>
+      </div>
+    </div>
+  </mdb-card>
 </div>
-<!-- /Start your project here-->
-    
+<!-- End your project here-->
