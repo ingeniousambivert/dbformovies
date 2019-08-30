@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + "/dist/dbformovies"));
 
 // Send all requests to index.html
-app.get("/*", function(req, res) {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname + "/dist/dbformovies/index.html"));
 });
 
