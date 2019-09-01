@@ -6,12 +6,13 @@
     <div class="text-white text-center py-5 px-4 my-5">
       <div>
         <h1 class="card-title h1-responsive pt-3 mb-5 font-bold">
-          <strong>dbforMovies</strong>
+          <strong>{{ title }}</strong>
         </h1>
         <p class="mx-5 mb-5">
           dbforMovies as the name suggests is a movie database. It has a minimal
           interface created in Angular using themoviedb API.
         </p>
+        <p *ngFor="let movie of movies$">{{ movie.title }}</p>
         <a
           mdbBtn
           color="white"

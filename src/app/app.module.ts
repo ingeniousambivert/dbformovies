@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { FormsModule } from "@angular/forms";
+import { APIService } from "./api.service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,7 @@ import { FormsModule } from "@angular/forms";
     MDBBootstrapModule.forRoot(),
     FormsModule
   ],
-  providers: [],
+  providers: [APIService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
